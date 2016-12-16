@@ -67,3 +67,5 @@ public class PalindromesTest {
 		assertEquals("frab", instance.reverseMe("barf"));
 	}
 }
+
+//Copyright AndrewSeo Inc. 2016

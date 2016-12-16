@@ -23,3 +23,6 @@ public class Palindromes {
 	}
 
 }
+
+
+//Copyright AndrewSeo Inc. 2016

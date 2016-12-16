@@ -37,3 +37,5 @@ public class StringThings {
 		System.out.println(a);
 	}
 }
+
+//Copyright AndrewSeo Inc. 2016
