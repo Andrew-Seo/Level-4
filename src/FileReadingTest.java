@@ -22,11 +22,11 @@ public class FileReadingTest extends TestCase {
 		assertEquals("Happy friyday!!other stuff", FileEncryptor.readFileContents(file));
 	}
 
-	// /* Create your own encryption algorithm and adjust the asserts. */
-	// public void testEncrypt() throws Exception {
-	// String encryptMe = "lalala";
-	// assertEquals("ncncnc", FileEncryptor.encrypt(encryptMe));
-	// }
+	 /* Create your own encryption algorithm and adjust the asserts. */
+	 public void testEncrypt() throws Exception {
+	 String encryptMe = "lalalazM";
+	 assertEquals("ncncncbO", FileEncryptor.encrypt(encryptMe));
+	 }
 
 	// public void testSaveAFile() throws Exception {
 	// assertTrue(FileEncryptor.saveFile("fileName").isFile());
