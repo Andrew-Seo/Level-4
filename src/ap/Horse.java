@@ -1,19 +1,20 @@
 package ap;
 
 public class Horse {
+	String name;
+	int weight;
 
 	public Horse(String string, int i) {
-		
+		name = string;
+		weight = i;
 	}
 
-	public Object getName() {
-		Horse.
-		return null;
+	public String getName() {
+		return name;
 	}
 
-	public Object getWeight() {
-		
-		return null;
+	public int getWeight() {
+		return weight;
 	}
-	
+
 }
