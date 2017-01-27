@@ -24,19 +24,49 @@ public class HorseBarn {
 		horseBarn.setSpaces(horsey);
 		return horseBarn;
 	}
-	
-	public int findHorseSpace (String string){
-		int x = 0;
-		Horse[] temp = getSpaces();
-		for (int i = 0; i < temp.length; i++) {
-			if(string == temp[i].getName()){
-				x = i;
+
+	public void consolidate() {
+		for (int i = 0; i < spaces.length; i++) {
+			if (spaces[i] == null) {
+				spaces[i] = spaces[i + 1];
+				spaces[i + 1] = spaces[i + 2];
+				spaces[i + 2] = spaces[i + 3];
+				spaces[i + 3] = spaces[i + 4];
+				spaces[i + 4] = spaces[i + 5];
+				spaces[i + 5] = spaces[i + 6];
+				spaces[i + 6] = spaces[i + 7];
+				if (i > spaces.length - 1) {
+					i = spaces.length - 1;
+				} else if (i + 1 > spaces.length - 1) {
+					i = spaces.length - 1;
+				} else if (i + 2 > spaces.length - 1) {
+					i = spaces.length - 1;
+				} else if (i + 3 > spaces.length - 1) {
+					i = spaces.length - 1;
+				} else if (i + 4 > spaces.length - 1) {
+					i = spaces.length - 1;
+				} else if (i + 5 > spaces.length - 1) {
+					i = spaces.length - 1;
+				} else if (i + 6 > spaces.length - 1) {
+					i = spaces.length - 1;
+				} else if (i + 7 > spaces.length - 1) {
+					i = spaces.length - 1;
+				}
 			}
-			else {
-				x = -1;
-			}
-			
 		}
-		return x;
+	}
+
+	public int findHorseSpace(String string) {
+		int x = 0;
+		for (int i = 0; i < spaces.length; i++) {
+			if (spaces[i] == null) {
+				i++;
+			}
+			if (string == spaces[i].getName()) {
+				x = i;
+				return x;
+			}
+		}
+		return -1;
 	}
 }

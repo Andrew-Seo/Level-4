@@ -16,5 +16,4 @@ public class Horse {
 	public int getWeight() {
 		return weight;
 	}
-
 }

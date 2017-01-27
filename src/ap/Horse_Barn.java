@@ -1,8 +1,6 @@
 package ap;
 
-//Copyright Wintriss Technical Schools 2013
-
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
@@ -48,20 +46,25 @@ public class Horse_Barn {
 	@Test
 	public void testPartA() throws Exception {
 		HorseBarn horseBarn = HorseBarn.createTestBarn();
-		assertEquals(0, horseBarn.findHorseSpace("Trigger"));// 0 A horse named Trigger is in space 0.
-		assertEquals(2, horseBarn.findHorseSpace("Silver")); // 2 A horse named Silver is in space 2.
-		assertEquals(-1, horseBarn.findHorseSpace("Coco"));// -1 A horse named Coco is not in the barn
+		assertEquals(0, horseBarn.findHorseSpace("Trigger"));// 0 A horse named
+																// Trigger is in
+																// space 0.
+		assertEquals(2, horseBarn.findHorseSpace("Silver")); // 2 A horse named
+																// Silver is in
+																// space 2.
+		assertEquals(-1, horseBarn.findHorseSpace("Coco"));// -1 A horse named
+															// Coco is not inthe
+															// barn
 	}
 
 	// 8. try to solve part (b) on paper
 
-	// @Test
-	// public void testPartB() throws Exception {
-	// Object horseBarn;
-	// // 9. set up the barn
-	// horseBarn.consolidate();
-	// // 10. write asserts that verify that the barn was consolidated (see page
-	// 16)
-	// }
-
+	@Test
+	public void testPartB() throws Exception {
+		HorseBarn horseBarn = HorseBarn.createTestBarn();
+		// 9. set up the barn
+		horseBarn.consolidate();
+		// 10. write asserts that verify that the barn was consolidated (see
+		// page 16)
+	}
 }
