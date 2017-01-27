@@ -28,13 +28,6 @@ public class HorseBarn {
 	public void consolidate() {
 		for (int i = 0; i < spaces.length; i++) {
 			if (spaces[i] == null) {
-				spaces[i] = spaces[i + 1];
-				spaces[i + 1] = spaces[i + 2];
-				spaces[i + 2] = spaces[i + 3];
-				spaces[i + 3] = spaces[i + 4];
-				spaces[i + 4] = spaces[i + 5];
-				spaces[i + 5] = spaces[i + 6];
-				spaces[i + 6] = spaces[i + 7];
 				if (i > spaces.length - 1) {
 					i = spaces.length - 1;
 				} else if (i + 1 > spaces.length - 1) {
@@ -52,6 +45,13 @@ public class HorseBarn {
 				} else if (i + 7 > spaces.length - 1) {
 					i = spaces.length - 1;
 				}
+				spaces[i] = spaces[i + 1];
+				spaces[i + 1] = spaces[i + 2];
+				spaces[i + 2] = spaces[i + 3];
+				spaces[i + 3] = spaces[i + 4];
+				spaces[i + 4] = spaces[i + 5];
+				spaces[i + 5] = spaces[i + 6];
+				spaces[i + 6] = spaces[i + 7];
 			}
 		}
 	}
