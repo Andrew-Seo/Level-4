@@ -2,13 +2,16 @@ package BattleShips;
 
 import java.awt.Color;
 import java.awt.GridLayout;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class View extends JFrame {
+public class View extends JFrame implements MouseListener {
 	public final int dimension = 1000;
 	JPanel panel = new JPanel();
 	JPanel player = new JPanel();
@@ -48,7 +51,37 @@ public class View extends JFrame {
 		playerGrid[x][y].setOpaque(true);
 	}	
 	void drawCompShip(int x, int y){
-		compGrid[x][y].setBackground(Color.DARK_GRAY);
+		compGrid[x][y].setBackground(Color.RED);
 		compGrid[x][y].setOpaque(true);
+	}
+
+	@Override
+	public void mouseClicked(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mousePressed(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseEntered(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseExited(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 }
