@@ -1,7 +1,7 @@
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
-public class AutocorrectTest {
+public class YourSisterAutocorrectTest {
   @Test
   public void testApply() {
     String[] inputs = new String[] {
