@@ -5,14 +5,14 @@ public class LinkedListStuffNodes {
 	LinkedListStuffNodes next;
 	
 	void setData(String data){
-	
+		this.data=data;
 	}
 	
 	String getData(){
 		return data;
 	}
 	void setNext(LinkedListStuffNodes nodes){
-		
+		next=nodes;
 	}
 	LinkedListStuffNodes getNext(){
 		return next;

@@ -3,20 +3,31 @@ package linked_list;
 public class LinkedListStuff implements LinkedListInterfaces {
 
 	LinkedListStuffNodes first;
-	LinkedListStuffNodes b;
 	
+
 	@Override
-	public void add(LinkedListStuffNodes node) {
+	public void add(String x) {
 		
-		if(first == null){
+		LinkedListStuffNodes node = new LinkedListStuffNodes();
+		node.setData(x);
+		LinkedListStuffNodes b;
+		b = first;
+		
+		
+		if(first==null){
 			first = node;
+			
 		}
-		else{
-		while(b.getNext() == null){
-			b.setNext(node);
-		}}
+		else if(first != null){
+			while (b.getNext() != null) {
+			b = b.getNext();
+		}
+		b.setNext(node);
+		}
 		
 	}
+		
+	
 
 	@Override
 	public void remove(int x) {
@@ -30,9 +41,17 @@ public class LinkedListStuff implements LinkedListInterfaces {
 	}
 
 	@Override
-	public void print(LinkedListStuffNodes nodes) {
-		
-		
+	public void print() {
+		LinkedListStuffNodes b;
+		b=first;
+		while(b.getNext() != null){
+			System.out.println(b.getData());
+			b=b.getNext();
+			if(b.getNext() == null){
+				break;
+			}
+		}
+			
 	}
 	
 }

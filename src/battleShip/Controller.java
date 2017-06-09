@@ -20,7 +20,7 @@ public class Controller implements MouseListener {
 	}
 	@Override
 	public void mousePressed(MouseEvent e) {
-		if(e.get)
+		
 		m.attackShip(e.getX(), e.getY());
 		
 		
