@@ -1,20 +1,22 @@
- package linked_list;
+package linked_list;
 
 public class LinkedListStuffNodes {
 	String data;
 	LinkedListStuffNodes next;
-	
-	void setData(String data){
-		this.data=data;
+
+	void setData(String data) {
+		this.data = data;
 	}
-	
-	String getData(){
+
+	String getData() {
 		return data;
 	}
-	void setNext(LinkedListStuffNodes nodes){
-		next=nodes;
+
+	void setNext(LinkedListStuffNodes nodes) {
+		next = nodes;
 	}
-	LinkedListStuffNodes getNext(){
+
+	LinkedListStuffNodes getNext() {
 		return next;
 	}
 }
